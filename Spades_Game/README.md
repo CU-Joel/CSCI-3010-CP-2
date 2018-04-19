@@ -1,0 +1,1 @@
+The game can be run in Qt Creator. All the files in the GitHub branch HW4 should be included.

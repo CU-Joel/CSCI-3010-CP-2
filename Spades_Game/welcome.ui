@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Welcome</class>
+ <widget class="QDialog" name="Welcome">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>333</width>
+     <height>136</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Welcome to Joels Spades. Select Max Score and Difficulty. </string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="scoreBoxLabel">
+      <property name="text">
+       <string>Max Score</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="difficultyBoxLabel">
+      <property name="text">
+       <string>Difficulty</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QComboBox" name="WinningScore"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="Difficulty"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="Go">
+      <property name="text">
+       <string>Go</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
