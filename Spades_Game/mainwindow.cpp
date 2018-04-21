@@ -198,8 +198,9 @@ void MainWindow::on_play1_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play2_clicked()
@@ -208,8 +209,9 @@ void MainWindow::on_play2_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play3_clicked()
@@ -218,8 +220,9 @@ void MainWindow::on_play3_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play4_clicked()
@@ -228,8 +231,9 @@ void MainWindow::on_play4_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play5_clicked()
@@ -238,8 +242,9 @@ void MainWindow::on_play5_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play6_clicked()
@@ -248,8 +253,9 @@ void MainWindow::on_play6_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play7_clicked()
@@ -258,8 +264,9 @@ void MainWindow::on_play7_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play8_clicked()
@@ -268,8 +275,9 @@ void MainWindow::on_play8_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play9_clicked()
@@ -278,8 +286,9 @@ void MainWindow::on_play9_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play10_clicked()
@@ -288,8 +297,9 @@ void MainWindow::on_play10_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play11_clicked()
@@ -298,8 +308,9 @@ void MainWindow::on_play11_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play12_clicked()
@@ -308,8 +319,9 @@ void MainWindow::on_play12_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 
 void MainWindow::on_play13_clicked()
@@ -318,8 +330,9 @@ void MainWindow::on_play13_clicked()
         turnCount++;
         G.moveWhoseTurn();
         playGame();
+        setPlayButtons(false);
     }
-    setPlayButtons(false);
+
 }
 void MainWindow::showHand(vector<string> &s){
     //path to a resource file with the :

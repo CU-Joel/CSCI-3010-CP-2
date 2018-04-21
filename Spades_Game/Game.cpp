@@ -179,11 +179,12 @@ void Game::bid(Player* _Player){
         message ="TeamMate bid "+to_string(TMBid)+"\nOpponent 2 bid "+to_string(Opp2Bid)+"\nYour turn to bid. Enter your bid below.";
     }else if(Opp2Bid){
         message ="Opponent 2 bid "+to_string(Opp2Bid)+"\nYour turn to bid. Enter your bid below.";
-    }else if(DealerPtr==&OPP2){
-        message ="Opponent 1 bid "+to_string(Opp1Bid)+"\nTeamMate bid "+to_string(TMBid)+"\nOpponent 2 bid "+to_string(Opp2Bid)+"\nYour turn to play.";
     }else
         message ="Enter your bid below.";
     emit printText(message);
+    if(DealerPtr==&OPP2){
+            message ="Opponent 1 bid "+to_string(Opp1Bid)+"\nTeamMate bid "+to_string(TMBid)+"\nOpponent 2 bid "+to_string(Opp2Bid)+"\nYour turn to play.";
+    }
 
 
 }
