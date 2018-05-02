@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>548</width>
-    <height>633</height>
+    <width>715</width>
+    <height>661</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="Opp1">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>110</y>
+      <x>270</x>
+      <y>90</y>
       <width>51</width>
       <height>71</height>
      </rect>
@@ -33,8 +33,8 @@
    <widget class="QLabel" name="player">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>180</y>
+      <x>370</x>
+      <y>160</y>
       <width>51</width>
       <height>71</height>
      </rect>
@@ -49,8 +49,8 @@
    <widget class="QLabel" name="Opp2">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>100</y>
+      <x>470</x>
+      <y>80</y>
       <width>51</width>
       <height>71</height>
      </rect>
@@ -65,8 +65,8 @@
    <widget class="QLabel" name="TM">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>40</y>
+      <x>370</x>
+      <y>20</y>
       <width>51</width>
       <height>71</height>
      </rect>
@@ -81,10 +81,10 @@
    <widget class="QLabel" name="card1">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>21</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -97,10 +97,10 @@
    <widget class="QLabel" name="card2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>74</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -113,10 +113,10 @@
    <widget class="QLabel" name="card3">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>127</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -129,10 +129,10 @@
    <widget class="QLabel" name="card4">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>180</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -145,10 +145,10 @@
    <widget class="QLabel" name="card5">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>233</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -161,10 +161,10 @@
    <widget class="QLabel" name="card6">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>286</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -177,10 +177,10 @@
    <widget class="QLabel" name="card7">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>339</x>
+      <y>251</y>
+      <width>44</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -193,10 +193,10 @@
    <widget class="QLabel" name="card8">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>391</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -209,10 +209,10 @@
    <widget class="QLabel" name="card9">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>444</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -225,10 +225,10 @@
    <widget class="QLabel" name="card10">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>497</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -241,10 +241,10 @@
    <widget class="QLabel" name="card11">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>550</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -257,10 +257,10 @@
    <widget class="QLabel" name="card12">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>603</x>
+      <y>251</y>
+      <width>45</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -273,10 +273,10 @@
    <widget class="QLabel" name="card13">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>300</y>
-      <width>25</width>
-      <height>36</height>
+      <x>656</x>
+      <y>251</y>
+      <width>44</width>
+      <height>69</height>
      </rect>
     </property>
     <property name="text">
@@ -291,256 +291,9 @@
      <rect>
       <x>20</x>
       <y>370</y>
-      <width>511</width>
+      <width>681</width>
       <height>111</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play1">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play2">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play3">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play4">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play5">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play6">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play7">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play8">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play9">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play10">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play11">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play12">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="play13">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>340</y>
-      <width>31</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>play</string>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="scoreLabel">
@@ -548,45 +301,239 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>101</width>
-      <height>251</height>
+      <width>141</width>
+      <height>221</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>500</y>
-      <width>471</width>
-      <height>33</height>
+      <width>111</width>
+      <height>32</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="startButton">
+    <property name="text">
+     <string>Start Game</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bidBox">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>504</y>
+      <width>125</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="turnButton">
+    <property name="geometry">
+     <rect>
+      <x>399</x>
+      <y>500</y>
+      <width>102</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Next Turn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bidButton">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>500</y>
+      <width>62</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bid</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>681</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="11">
+      <widget class="QPushButton" name="play12">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
        <property name="text">
-        <string>Start Game</string>
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QLineEdit" name="bidBox"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="bidButton">
+     <item row="0" column="4">
+      <widget class="QPushButton" name="play5">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
        <property name="text">
-        <string>Bid</string>
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="turnButton">
+     <item row="0" column="5">
+      <widget class="QPushButton" name="play6">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
        <property name="text">
-        <string>Next Turn</string>
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="10">
+      <widget class="QPushButton" name="play11">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="play3">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="play4">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="play2">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="play1">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="12">
+      <widget class="QPushButton" name="play13">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QPushButton" name="play8">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QPushButton" name="play7">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="9">
+      <widget class="QPushButton" name="play10">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QPushButton" name="play9">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
@@ -598,7 +545,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>548</width>
+     <width>715</width>
      <height>22</height>
     </rect>
    </property>

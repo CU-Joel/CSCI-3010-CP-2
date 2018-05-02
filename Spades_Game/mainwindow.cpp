@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //this->setStyleSheet("background-color: green;");
     //QObject::connect(ui->play1, SIGNAL (released()),this, SLOT (on_play1_clicked()));
     //labelArr[0] = &card1;
     ui->textBox->setText("Welcome to Joels Spades. Press the button below to start.");

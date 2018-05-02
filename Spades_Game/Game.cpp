@@ -346,6 +346,25 @@ void Game::playCard(int i){
                     if(i->suit == Suit::spade && i->num > _Player->getSpades().back()->num)
                         cantWin=true;
                 }
+            }else if(CardsOnTable.size() > 1){
+                Card *TeamMateCard = CardsOnTable[CardsOnTable.size()-2];
+                if(!trump && TeamMateCard->suit == Suit::diamond){
+                    if(CardsOnTable.size() == 3){
+                        if(!((CardsOnTable[0]->suit == Suit::diamond && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::diamond && CardsOnTable[2]->num > TeamMateCard->num))){
+                            cantWin=true;
+                        }
+                    }else if(TeamMateCard->face == Face::king){
+                        cantWin=true;
+                    }
+                }else if(trump && TeamMateCard->suit == Suit::spade){
+                    if(CardsOnTable.size() == 3){
+                        if(!((CardsOnTable[0]->suit == Suit::spade && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::spade && CardsOnTable[2]->num > TeamMateCard->num))){
+                            cantWin=true;
+                        }
+                    }else if(TeamMateCard->face == Face::king){
+                        cantWin=true;
+                    }
+                }
             }
             
             if(cantWin){
@@ -373,6 +392,7 @@ void Game::playCard(int i){
                     CardsOnTable.push_back(_Player->playHeart((int)_Player->getHearts().size()-1));
                 }
             }
+            
             
         }else if (CardsOnTable.front()->suit == Suit::club){
             if(!_Player->getClubs().empty() && trump){
@@ -413,7 +433,6 @@ void Game::playCard(int i){
             }
             
             
-            
         }else if (CardsOnTable.front()->suit == Suit::heart){
             if(!_Player->getHearts().empty() && trump){
                 cantWin=true;
@@ -452,8 +471,6 @@ void Game::playCard(int i){
                     CardsOnTable.push_back(_Player->playClub((int)_Player->getClubs().size()-1));
                 }
             }
-            
-            
             
             
         }else if(!_Player->getSpades().empty()){
