@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->table->setStyleSheet("background-color: darkGreen;");
     //this->setStyleSheet("background-color: green;");
     //QObject::connect(ui->play1, SIGNAL (released()),this, SLOT (on_play1_clicked()));
     //labelArr[0] = &card1;

@@ -17,6 +17,14 @@ Game::Game(){
     second = &TM;
     third = &OPP2;
     fourth = &User;
+    userTeamScore = 0;
+    computerTeamScore = 0;
+    userTeamBid = 0;
+    computerTeamBid = 0;
+    computerTeamTricks = 0;
+    userTeamTricks = 0;
+    computerTeamBags = 0;
+    userTeamBags = 0;
 }
 
 void Game::deal(){
@@ -121,6 +129,9 @@ void Game::getBid(int Ubid){
         bid(TurnPtr);
         moveWhoseTurn();
     }
+
+    if(Opp1Bid && TMBid && Opp2Bid && DealerPtr == &OPP2)
+        emit printText("Your turn to play.");
 }
 
 void Game::setUserBid(int bid){
@@ -215,16 +226,7 @@ void Game::takeTurn(){
     int leadingCard=0;
  
     
-    /*
-    cout << "\nOpponent 1's hand: ";
-    OPP1.displayHand();
-    cout << "\nTeammates's hand: ";
-    TM.displayHand();
-    cout << "\nOpponent 2's hand: ";
-    OPP2.displayHand();
-     */
-    //cout << "\nYour hand: ";
-    //User.displayHand();
+
     //Determine the winner of the hand
     if(trump){
         if(CardsOnTable[0]->num > CardsOnTable[1]->num && CardsOnTable[0]->num>CardsOnTable[2]->num && CardsOnTable[0]->num > CardsOnTable[3]->num){
@@ -331,7 +333,7 @@ void Game::playCard(int i){
                 CardsOnTable.push_back(_Player->playSpade((int)_Player->getSpades().size()-1));
                 trump = true;
             }
-        /**/
+
         //This section checks if the player can't win the hand and so shouldn't play a high card
         }else if (CardsOnTable.front()->suit == Suit::diamond){
             if(!_Player->getDiamonds().empty() && trump){
@@ -346,27 +348,29 @@ void Game::playCard(int i){
                     if(i->suit == Suit::spade && i->num > _Player->getSpades().back()->num)
                         cantWin=true;
                 }
-            }else if(CardsOnTable.size() > 1){
-                Card *TeamMateCard = CardsOnTable[CardsOnTable.size()-2];
-                if(!trump && TeamMateCard->suit == Suit::diamond){
-                    if(CardsOnTable.size() == 3){
-                        if(!((CardsOnTable[0]->suit == Suit::diamond && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::diamond && CardsOnTable[2]->num > TeamMateCard->num))){
-                            cantWin=true;
-                        }
-                    }else if(TeamMateCard->face == Face::king){
+            }
+
+        if(CardsOnTable.size() > 1){
+            Card *TeamMateCard = CardsOnTable[CardsOnTable.size()-2];
+            if(!trump && TeamMateCard->suit == Suit::diamond){
+                if(CardsOnTable.size() == 3){  //This section checks if teammate has already won
+                    if(!((CardsOnTable[0]->suit == Suit::diamond && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::diamond && CardsOnTable[2]->num > TeamMateCard->num))){
                         cantWin=true;
                     }
-                }else if(trump && TeamMateCard->suit == Suit::spade){
-                    if(CardsOnTable.size() == 3){
-                        if(!((CardsOnTable[0]->suit == Suit::spade && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::spade && CardsOnTable[2]->num > TeamMateCard->num))){
-                            cantWin=true;
-                        }
-                    }else if(TeamMateCard->face == Face::king){
+                }else if(TeamMateCard->face == Face::king){
+                    cantWin=true;
+                }
+            }else if(trump && TeamMateCard->suit == Suit::spade){
+                if(CardsOnTable.size() == 3){
+                    if(!((CardsOnTable[0]->suit == Suit::spade && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::spade && CardsOnTable[2]->num > TeamMateCard->num))){
                         cantWin=true;
                     }
+                }else if(TeamMateCard->face == Face::king){
+                    cantWin=true;
                 }
             }
-            
+        }
+
             if(cantWin){
                 if(!_Player->getDiamonds().empty()){
                     CardsOnTable.push_back(_Player->playDiamond(0));
@@ -408,6 +412,28 @@ void Game::playCard(int i){
                         cantWin=true;
                 }
             }
+
+            if(CardsOnTable.size() > 1){
+                Card *TeamMateCard = CardsOnTable[CardsOnTable.size()-2];
+                if(!trump && TeamMateCard->suit == Suit::club){
+                    if(CardsOnTable.size() == 3){  //This section checks if teammate has already won
+                        if(!((CardsOnTable[0]->suit == Suit::club && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::club && CardsOnTable[2]->num > TeamMateCard->num))){
+                            cantWin=true;
+                        }
+                    }else if(TeamMateCard->face == Face::king){
+                        cantWin=true;
+                    }
+                }else if(trump && TeamMateCard->suit == Suit::spade){
+                    if(CardsOnTable.size() == 3){
+                        if(!((CardsOnTable[0]->suit == Suit::spade && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::spade && CardsOnTable[2]->num > TeamMateCard->num))){
+                            cantWin=true;
+                        }
+                    }else if(TeamMateCard->face == Face::king){
+                        cantWin=true;
+                    }
+                }
+            }
+
             if(cantWin){
                 if(!_Player->getClubs().empty()){
                     CardsOnTable.push_back(_Player->playClub(0));
@@ -447,7 +473,28 @@ void Game::playCard(int i){
                         cantWin=true;
                 }
             }
-            
+
+            if(CardsOnTable.size() > 1){
+                Card *TeamMateCard = CardsOnTable[CardsOnTable.size()-2];
+                if(!trump && TeamMateCard->suit == Suit::heart){
+                    if(CardsOnTable.size() == 3){  //This section checks if teammate has already won
+                        if(!((CardsOnTable[0]->suit == Suit::heart && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::heart && CardsOnTable[2]->num > TeamMateCard->num))){
+                            cantWin=true;
+                        }
+                    }else if(TeamMateCard->face == Face::king){
+                        cantWin=true;
+                    }
+                }else if(trump && TeamMateCard->suit == Suit::spade){
+                    if(CardsOnTable.size() == 3){
+                        if(!((CardsOnTable[0]->suit == Suit::spade && CardsOnTable[0]->num > TeamMateCard->num) || (CardsOnTable[2]->suit == Suit::spade && CardsOnTable[2]->num > TeamMateCard->num))){
+                            cantWin=true;
+                        }
+                    }else if(TeamMateCard->face == Face::king){
+                        cantWin=true;
+                    }
+                }
+            }
+
             if(cantWin){
                 if(!_Player->getHearts().empty()){
                     CardsOnTable.push_back(_Player->playHeart(0));
@@ -474,8 +521,18 @@ void Game::playCard(int i){
             
             
         }else if(!_Player->getSpades().empty()){
-            CardsOnTable.push_back(_Player->playSpade((int)_Player->getSpades().size()-1));
-            trump = true;
+            for(auto const& i : CardsOnTable){
+                if(i->suit == Suit::spade && i->num > _Player->getSpades().back()->num){
+                    cantWin=true;
+                }
+            }
+            if(cantWin){
+                CardsOnTable.push_back(_Player->playSpade(0));
+            }else {
+                CardsOnTable.push_back(_Player->playSpade((int)_Player->getSpades().size()-1));
+            }
+        trump = true;
+
         }else if(!_Player->getClubs().empty()){
             CardsOnTable.push_back(_Player->playClub((int)_Player->getClubs().size()-1));
             
